@@ -124,13 +124,13 @@
 <script setup>
     import { ref } from 'vue';
     let username = 'Harry';
-    let shoppingcartItems = [
+    let shoppingcartItems = ref([
         { id: 1,productName: 'Dragon Liver', price: 1500, quantity: 3, inStock: true, image: "src/assets/img/DragonLiver.png" },
         { id: 2,productName: 'Golden Snitch', price: 600, quantity: 2, inStock: true, image:  "src/assets/img/GoldenSnitch.png"},
         { id: 3,productName: 'Unicorn Tail Hair', price: 1200, quantity: 1, inStock: false, image: "src/assets/img/UnicornTailHair.png" },
         { id: 4,productName: 'Wand', price: 2000, quantity: 1, inStock: true, image: "src/assets/img/Wand.jpg" },
         { id: 5,productName: 'Nimbus 2000', price: 5000, quantity: 1, inStock: true, image: "src/assets/img/Nimbus2000.jpg" }
-    ]
+    ])
 
     let hideDetails = ref(false)
 </script>
